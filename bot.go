@@ -213,4 +213,6 @@ func joinRandomChat(message UpdateResultMessageT) {
 // getHelp Вывести помощь. Список доступных команд
 func getHelp(message UpdateResultMessageT) {
 	sendMessage(message.From.ID, keywordJoinChat+" - Подключиться к анонимному чату")
+	sendMessage(message.From.ID, keywordStop+" - Отключиться от анонимного чата")
+	sendMessage(message.From.ID, keywordHelp+" - Справка")
 }
